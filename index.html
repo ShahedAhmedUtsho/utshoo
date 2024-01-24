@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Hockey&Blade</title>
+   <body data-theme="light">
+      <link rel="stylesheet" href="style.css">
+      <!-- google font cdn -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- daisy ui and tailwind css cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- font awasome cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+      
+      </head>
+
+      <body>
+
+
+         <div class="cont w-full m-auto px-3">
+            <header class="lg:min-h-28 flex ">
+               <div class="navbar bg-base-100 z-50 max m-auto">
+                  <div class="navbar-start">
+                     <div class="dropdown  " id="bar">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                           </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm  dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-36">
+                           <li><a >Home</a></li>
+                           <li><a>About</a></li>
+                           <li><a>Pages</a></li>
+                           <li><a>Blog</a></li>
+                           <li><a>Contact</a></li>
+                        </ul>
+                     </div>
+                     <a class="btn btn-ghost text-2xl  " id="logo"> Hockey &<span class="text-[#FF4240]">Blade</span></a>
+                  </div>
+                  <div class="navbar-center hidden lg:flex" id="nav">
+                     <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-base font-normal" id="active">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                     </ul>
+                  </div>
+                  <div class="navbar-end flex gap-4 font-extralight ">
+                     <i class="fa-solid fa-magnifying-glass text-[#89898bdc] opacity-0  lg:opacity-100  text-xl "></i>
+                     <button class="  max-w-44 text-white  text-[13px]  lg:text-base px-[1em] py-[0.6em] bg-[#FF4240] rounded-md font-bold hover:bg-[#ff4340c2]  active:scale-95 transition-all ease-linear ">Get Ticket</button >
+                  </div>
+               </div>
+            </header>
+            <main class=" z-10 hero max  mx-auto  rounded-2xl relative    flex">
+               <div class="    hidden lg:visible lg:absolute lg:bottom-4 lg:right-4 lg:text-2xl z-50 bg-black text-white lg:inline-block max-w-[21em] p-[1.3em] rounded-lg box-shadow " >
+                  <h2 class="text-[1em] font-bold ">
+                     Meet all the heroes from the field
+                  </h2>
+                  <p class="text-[0.6em] pt-3 leading-6 opacity-60">
+                     Unveiling Our Hockey Heroes: Meet the extraordinary players who redefine skill, passion, and sportsmanship on ice!
+                  </p>
+               </div>
+               <div class="carousel w-full rounded-2xl z-10  max-w-[650px]  lg:max-w-[2000px] ">
+                  <div id="slide1" class="carousel-item relative w-full  ">
+                     <img src="./Images/pxfuel (5).jpg" class=" max-h[550px] w-full h-full object-cover rounded-2xl max-h-[550px]" alt="img" />
+                     <div class=" absolute flex  gap-4 transform -translate-y-1/2 lg:left-5  left-1/3 right-1/3 lg:right-auto justify-center   bottom-0 text-white   ">
+                        <a href="#slide4" class="w-10 h-10  rounded-full flex items-center justify-center bg-black ">❮</a> 
+                        <a href="#slide2" class="w-10 h-10 rounded-full flex items-center justify-center bg-black">❯</a>
+                     </div>
+                  </div>
+                  <div id="slide2" class="carousel-item relative w-full">
+                     <img  src="./Images/pxfuel (4).jpg" class="w-full rounded-2xl  h-full object-cover max-h-[550px]" alt="img"  />
+                     <div class="absolute flex  gap-4 transform -translate-y-1/2 lg:left-5  left-1/3 right-1/3  justify-center bottom-0 text-white  lg:right-auto   ">
+                        <a href="#slide1" class="w-10 h-10  rounded-full flex items-center justify-center bg-black">❮</a> 
+                        <a href="#slide3" class="w-10 h-10 rounded-full flex items-center justify-center bg-black">❯</a>
+                     </div>
+                  </div>
+                  <div id="slide3" class="carousel-item relative w-full">
+                     <img src="./Images/pxfuel (3).jpg" class="w-full  rounded-2xl h-full object-cover max-h-[550px]" alt="img"/>
+                     <div class="absolute flex  gap-4 transform -translate-y-1/2 lg:left-5  left-1/3 right-1/3  justify-center bottom-0 text-white  lg:right-auto ">
+                        <a href="#slide2" class="w-10 h-10  rounded-full flex items-center justify-center bg-black">❮</a> 
+                        <a href="#slide4" class="w-10 h-10 rounded-full flex items-center justify-center bg-black">❯</a>
+                     </div>
+                  </div>
+                  <div id="slide4" class="carousel-item relative w-full object-cover">
+                     <img src="./Images/pxfuel (2).jpg" class="w-full  rounded-2xl h-full max-h-[550px]" alt="img"  />
+                     <div class="absolute flex  gap-4 transform -translate-y-1/2 lg:left-5  left-1/3 right-1/3  justify-center bottom-0 text-white lg:right-auto">
+                        <a href="#slide3" class="w-10 h-10  rounded-full flex items-center justify-center bg-black">❮</a> 
+                        <a href="#slide1" class="w-10 h-10 rounded-full flex items-center justify-center bg-black">❯</a>
+                     </div>
+                  </div>
+               </div>
+            </main>
+            <article class=" mx-auto  min-h-36 mt-4 lg:hidden max-w-[650px] ">
+               <div class="   h-full    text-[18px] z-50 bg-black text-white w-full p-[1em] rounded-lg box-shadow " >
+                  <h2 class="text-[1em] mb-2 font-bold">
+                     Meet all the heroes from the field
+                  </h2>
+                  <p class="text-[0.75em] opacity-65 leading-5">
+                     Unveiling Our Hockey Heroes: Meet the extraordinary players who redefine skill, passion, and sportsmanship on ice!
+                  </p>
+               </div>
+            </article>
+            <div class="pro max m-auto mt-5 lg:mt-20  text-center border-b-2 border-t-2 border-stone-400 border-dashed  lg:py-8 py-5 ">
+               <h1 class=" lg:text-4xl   text-2xl  font-bold lg:leading-9 "> 
+                  Professional Hockeys Club
+               </h1>
+               <p class=" lg:text-base text-sm font-normal opacity-70 max-w-[620px] m-auto  px-3 p-2 leading-6 lg:leading-7 lg:mt-6">
+                  Elite prowess on ice, defining excellence. Join our professional hockey club for thrilling victories and unforgettable moments 
+               </p>
+            </div>
+            <div class="max m-auto  lg:py-3   ">
+               <div class="grid w-full   lg:grid-cols-4 grid-cols-1 gap-5 lg:gap-1">
+                  <div class="grid-items text-center flex justify-center items-center flex-col gap-3 px-2 py-10 ">
+                     <div class="radial-progress text-[#ff4240] max-w-20 " style="--value:70;" role="progressbar">
+                        <p class="text-black font-bold">87%</p>
+                     </div>
+                     <h2 class="text-xl font-semibold ">Prayer Facility</h2>
+                     <p class="max-w-64 leading-6 font-normal text-sm lg:text-base opacity-60">Nurturing talent, forging champions on and off ice</p>
+                  </div>
+                  <div class="grid-items text-center flex justify-center items-center flex-col gap-3 px-2 py-10 ">
+                     <div class="radial-progress text-[#4ad293] max-w-20" style="--value:70;" role="progressbar">
+                        <p class="text-black font-bold">95%</p>
+                     </div>
+                     <h2 class="text-xl font-semibold ">Experienced Coach</h2>
+                     <p class="max-w-64 leading-6 font-normal text-sm lg:text-base opacity-60">Mentored by experience, our coach defines hockey excellence. .</p>
+                  </div>
+                  <div class="grid-items text-center flex justify-center items-center flex-col gap-3 px-2 py-10 ">
+                     <div class="radial-progress text-[#ffb546] max-w-20" style="--value:70;" role="progressbar">
+                        <p class="text-black font-bold">90%</p>
+                     </div>
+                     <h2 class="text-xl font-semibold ">Senior Player</h2>
+                     <p class="max-w-64 leading-6 font-normal text-sm lg:text-base opacity-60">A maestro on ice, leadership personified, unparalleled experience
+                        .
+                     </p>
+                  </div>
+                  <div class="grid-items text-center flex justify-center items-center flex-col gap-3 px-2 py-10 ">
+                     <div class="radial-progress text-[#4c8df1] max-w-20" style="--value:70;" role="progressbar">
+                        <p class="text-black font-bold">80%</p>
+                     </div>
+                     <h2 class="text-xl font-semibold ">Training Ground</h2>
+                     <p class="max-w-64 leading-6 font-normal text-sm lg:text-base opacity-60">Where dedication meets excellence, forging champions on every stride.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="pro max m-auto mt-5 lg:mt-6 py-5  text-center border-b-2 border-t-2 border-stone-400 border-dashed  lg:py-8 mb-10">
+               <h1 class=" lg:text-4xl   text-2xl  font-bold lg:leading-9 "> 
+                  Program Sections
+               </h1>
+               <p class=" lg:text-base text-sm font-normal opacity-70 max-w-[620px] m-auto  px-3 p-2 leading-6 lg:leading-7 lg:mt-6">
+                  View, Check, and Explore Our Program Sections Below for Optimal Hockey Success
+               </p>
+            </div>
+            <div class="grid max m-auto min-h-96 grid-cols-1 lg:grid-cols-4 rounded-lg gap-6 ">
+               <div class=" grid-items  rounded-2xl  lg:col-span-2 lg:min-h-[340px] col-span-1   min-h-60  relative bg-[url(./Images/2.png)]  bg-no-repeat bg-center bg-cover">
+                  <div class="w-full h-full  bg-[#13131880]  flex flex-col items-baseline justify-end p-6 lg:p-10 rounded-2xl">
+                     <h class=" font-bold text-2xl lg:text-3xl  text-white  ">
+                     Junior Program</h2>
+                     <p class="my-4 lg:text-base text-sm  lg:leading-5 leading-5 font-normal [500px]">Unlock Potential in Our Junior Program: Tailored coaching, skill development, and teamwork. Nurturing young talents to thrive in the dynamic world of hockey.</p>
+                     <button class="  max-w-44 text-white  text-sm  lg:text-xl px-[1em] py-[0.6em] bg-[#FF4240] rounded-md font-bold hover:bg-[#ff4340c2]  active:scale-95 transition-all ease-linear " >Register Now!</button >
+                  </div>
+               </div>
+               <div class="grid-items rounded-2xl lg:col-span-2 lg:min-h-[340px] col-span-1 min-h-60 bg-[url(./Images/3.png)]  bg-no-repeat bg-center bg-cover ">
+                  <div class="w-full h-full  bg-[#13131880]  flex flex-col items-baseline justify-end p-6 lg:p-10 rounded-2xl ">
+                     <h class=" font-bold text-2xl lg:text-3xl  text-white  ">
+                     Teenager Program</h2>
+                     <p class="my-4 lg:text-base text-sm  lg:leading-5 leading-5 font-normal [500px]">Empowering Teenagers Through Our Program: Specialized coaching, skill enhancement, and mentorship. Focused on holistic growth, preparing young athletes for success on and off the hockey rink.</p>
+                     <button class="  max-w-44 text-white  text-sm  lg:text-xl px-[1em] py-[0.6em] bg-[#FF4240] rounded-md font-bold hover:bg-[#ff4340c2]  active:scale-95 transition-all ease-linear " >Register Now!</button >
+                  </div>
+               </div>
+               <div class="grid-items  rounded-2xl lg:min-h-[450px]  lg:col-span-4  col-span-1 min-h-60 bg-[url(./Images/4.png)]  bg-no-repeat bg-center bg-cover ">
+                  <div class="w-full h-full  bg-[#13131880]  flex flex-col items-baseline justify-end p-6 lg:p-10 rounded-2xl">
+                     <h class=" font-bold text-2xl lg:text-3xl  text-white  ">
+                     Professional Program</h2>
+                     <p class="my-4 lg:text-base text-sm  lg:leading-5 leading-5 font-normal max-w-[500px]">Cutting-edge coaching, advanced skill refinement, and strategic mastery. Tailored for elite athletes chasing excellence. Unleash your potential on the professional stage with us</p>
+                     <button class="  max-w-44 text-white  text-sm  lg:text-xl px-[1em] py-[0.6em] bg-[#FF4240] rounded-md font-bold hover:bg-[#ff4340c2]  active:scale-95 transition-all ease-linear " >Register Now!</button >
+                  </div>
+               </div>
+            </div>
+            <div class="pro max m-auto mt-5 lg:mt-24 py-5  text-center border-b-2 border-t-2 border-stone-400 border-dashed lg:py-8 mb-10">
+               <h1 class=" lg:text-4xl   text-2xl  font-bold lg:leading-9 "> 
+                  Our New Products
+               </h1>
+               <p class=" lg:text-base text-sm font-normal opacity-70 max-w-[620px] m-auto  px-3 p-2 leading-6 lg:leading-7 lg:mt-6">
+                  Discover Innovation in Our New Products Section: Elevate your game with cutting-edge hockey gear, equipment, and apparel. Unleash excellence on the ice.
+               </p>
+            </div>
+            <div class="grid-box grid lg:grid-cols-2 grid-cols-1 gap-6 max m-auto lg:py-24  min-h-[700px]     ">
+               <div class="grid-item items-shadow flex flex-col lg:flex-row p-4 lg:px-6 lg:py-5 pb-8 w-full border-2 border-[#e7e7e8] lg:rounded-xl rounded-3xl gap-4     lg:max-h-[450px] lg:min-h-40 max-h-[700px] ">
+                  <img src="./Images/5.png" alt="grid-items" class="  min-h-44  h lg:block hidden "  >
+                  <img src="./Images/Rectangle 4.png" alt="grid-items" class=" lg:hidden w-full "  >
+                  <div class="flex-info   w-full lg:h-3/5 h-full">
+                     <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#F99808] inline-block font-normal text-base">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">5.0</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-eye text-[#13131880] inline-block font-normal text-base"></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">5760</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-heart text-[#13131880]   inline-block font-normal text-base" ></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">3444</p>
+                           </i>
+                        </li>
+                     </ul>
+                     <h2 class="text-xl font-extrabold my-3"> red wave hockey jersey</h2>
+                     <p class="text-base font-normal leading-6 text-[#13131899]">
+                        Explore the Red White Hockey Jersey . Email for customization.
+                     </p>
+                     <div class="flex  lg:flex-row flex-col  justify-between  mt-4 gap-3">
+                        <h2 class="text-[18px] font-extrabold text-[#FF4240] leading-7 ">Price - $30.00</h2>
+                        <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#13131880]   inline-block font-normal text-base ">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">Delivery Fee : Free</p>
+                           </i>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid-item flex items-shadow flex-col lg:flex-row p-4 lg:px-6 lg:py-5 w-full border-2 border-[#e7e7e8] lg:rounded-xl rounded-3xl gap-4     lg:max-h-[450px] lg:min-h-40 max-h-[700px]  pb-8 ">
+                  <img src="./Images/6.png" alt="grid-items" class="lg:w-2/5  max-h-44  lg:p-0 lg:block hidden"  >
+                  <img src="./Images/Rectangle 4 (1).png" alt="grid-items" class=" lg:hidden w-full   "  >
+                  <div class="flex-info   w-full lg:h-3/5 h-full">
+                     <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#F99808] inline-block font-normal text-base">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">5.0</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-eye text-[#13131880] inline-block font-normal text-base"></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">345</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-heart text-[#13131880]   inline-block font-normal text-base" ></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">242</p>
+                           </i>
+                        </li>
+                     </ul>
+                     <h2 class="text-xl font-extrabold my-3">World Cup Flags Football</h2>
+                     <p class="text-base font-normal leading-6 text-[#13131899]">
+                        Show your team pride with high-quality flags football 
+                     </p>
+                     <div class="flex  lg:flex-row flex-col  justify-between  mt-4 gap-3">
+                        <h2 class="text-[18px] font-extrabold text-[#FF4240] leading-7 ">Price - $29.00</h2>
+                        <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#13131880]   inline-block font-normal text-base ">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">Delivery Fee : Free</p>
+                           </i>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid-item flex items-shadow flex-col lg:flex-row p-4 lg:px-6 lg:py-5 w-full border-2 border-[#e7e7e8] lg:rounded-xl rounded-3xl gap-4     lg:max-h-[450px] lg:min-h-40 max-h-[700px]  pb-8 ">
+                  <img src="./Images/7.png" alt="grid-items" class="lg:w-2/5  max-h-44  lg:p-0 lg:block hidden"  >
+                  <img src="./Images/Rectangle 4 (2).png" alt="grid-items" class=" lg:hidden w-full   "  >
+                  <div class="flex-info   w-full lg:h-3/5 h-full">
+                     <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#F99808] inline-block font-normal text-base">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">5.0</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-eye text-[#13131880] inline-block font-normal text-base"></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">745</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-heart text-[#13131880]   inline-block font-normal text-base" ></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">456</p>
+                           </i>
+                        </li>
+                     </ul>
+                     <h2 class="text-xl font-extrabold my-3">hockey cap</h2>
+                     <p class="text-base font-normal leading-6 text-[#13131899]">
+                        Delete the product. email for Customization and huge quantity
+                     </p>
+                     <div class="flex  lg:flex-row flex-col  justify-between  mt-4 gap-3">
+                        <h2 class="text-[18px] font-extrabold text-[#FF4240] leading-7 ">Price - $10.00</h2>
+                        <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#13131880]   inline-block font-normal text-base ">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">Delivery Fee : Free</p>
+                           </i>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid-item flex items-shadow flex-col lg:flex-row p-4 lg:px-6 lg:py-5 w-full border-2 border-[#e7e7e8] lg:rounded-xl rounded-3xl gap-4     lg:max-h-[450px] lg:min-h-40 max-h-[700px]  pb-8 ">
+                  <img src="./Images/8.png" alt="grid-items" class="lg:w-2/5  max-h-44  lg:p-0 lg:block hidden"  >
+                  <img src="./Images/Rectangle 4 (3).png" alt="grid-items" class=" lg:hidden w-full 4  "  >
+                  <div class="flex-info   w-full lg:h-3/5 h-full">
+                     <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#F99808] inline-block font-normal text-base">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">5.0</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-eye text-[#13131880] inline-block font-normal text-base"></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">2789</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-heart text-[#13131880]   inline-block font-normal text-base" ></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">765</p>
+                           </i>
+                        </li>
+                     </ul>
+                     <h2 class="text-xl font-extrabold my-3"> customizable jersey</h2>
+                     <p class="text-base font-normal leading-6 text-[#13131899]">
+                        Check out Jersey today. Stock available unlimited
+                     </p>
+                     <div class="flex  lg:flex-row flex-col  justify-between  mt-4 gap-3">
+                        <h2 class="text-[18px] font-extrabold text-[#FF4240] leading-7 ">Price - $10.00</h2>
+                        <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#13131880]   inline-block font-normal text-base ">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">Delivery Fee : Free</p>
+                           </i>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid-item flex items-shadow flex-col lg:flex-row p-4 lg:px-6 lg:py-5 w-full border-2 border-[#e7e7e8] lg:rounded-xl rounded-3xl gap-4     lg:max-h-[450px] lg:min-h-40 max-h-[700px]  pb-8  ">
+                  <img src="./Images/9.png" alt="grid-items" class="lg:w-2/5  max-h-44  lg:p-0 lg:block hidden"  >
+                  <img src="./Images/Rectangle 4 (4).png" alt="grid-items" class=" lg:hidden w-full   "  >
+                  <div class="flex-info   w-full lg:h-3/5 h-full">
+                     <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#F99808] inline-block font-normal text-base">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">5.0</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-eye text-[#13131880] inline-block font-normal text-base"></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">280</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-heart text-[#13131880]   inline-block font-normal text-base" ></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">143</p>
+                           </i>
+                        </li>
+                     </ul>
+                     <h2 class="text-xl font-extrabold my-3"> hockey helmet</h2>
+                     <p class="text-base font-normal leading-6 text-[#13131899]">
+                        Order for this one , email for customization
+                     </p>
+                     <div class="flex  lg:flex-row flex-col  justify-between  mt-4 gap-3">
+                        <h2 class="text-[18px] font-extrabold text-[#FF4240] leading-7 ">Price - $50.00</h2>
+                        <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#13131880]   inline-block font-normal text-base ">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">Delivery Fee : Free</p>
+                           </i>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="grid-item flex items-shadow flex-col lg:flex-row p-4 lg:px-6 lg:py-5 w-full border-2 border-[#e7e7e8] lg:rounded-xl rounded-3xl gap-4     lg:max-h-[450px] lg:min-h-40 max-h-[700px]  pb-8 ">
+                  <img src="./Images/10.png" alt="grid-items" class="lg:w-2/5  max-h-44  lg:p-0 lg:block hidden"  >
+                  <img src="./Images/Rectangle 4 (5).png" alt="grid-items" class=" lg:hidden w-full  "  >
+                  <div class="flex-info   w-full lg:h-3/5 h-full">
+                     <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#F99808] inline-block font-normal text-base">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">5.0</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-eye text-[#13131880] inline-block font-normal text-base"></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">560</p>
+                           </i>
+                        </li>
+                        <li class="list-none">
+                           <i class="fa-regular fa-heart text-[#13131880]   inline-block font-normal text-base" ></i>
+                           <p class="inline-block text-[#13131880] font-normal text-base pl-1">321</p>
+                           </i>
+                        </li>
+                     </ul>
+                     <h2 class="text-xl font-extrabold my-3"> high-quality football</h2>
+                     <p class="text-base font-normal leading-6 text-[#13131899]">
+                        View the product order now for a quality football.
+                     </p>
+                     <div class="flex  lg:flex-row flex-col  justify-between  mt-4 gap-3">
+                        <h2 class="text-[18px] font-extrabold text-[#FF4240] leading-7 ">Price - $30.00</h2>
+                        <ul class="flex gap-8">
+                        <li class="list-none">
+                           <i class="fa-solid fa-star text-[#13131880]   inline-block font-normal text-base ">
+                              <p class="inline-block text-[#13131880] font-normal text-base pl-1">Delivery Fee : Free</p>
+                           </i>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pro max m-auto mt-5 lg:mt-24 py-5  text-center border-b-2 border-t-2 border-stone-400 border-dashed  lg:py-8 mb-10">
+               <h1 class=" lg:text-4xl   text-2xl  font-bold lg:leading-9 "> 
+                  Clients Question
+               </h1>
+               <p class=" lg:text-base text-sm font-normal opacity-70 max-w-[620px] m-auto  px-3 p-2 leading-6 lg:leading-7 lg:mt-6">
+                  "Got questions? We've got answers! Explore our Client Question section to find information about products, orders, or any inquiries. Ask away, and we're here to assist you. 
+               </p>
+            </div>
+            <article class="max m-auto  flex   flex-col lg:flex-row lg:h-[550px] p-2 lg:p-8 gap-5">
+               <div class="box-1  lg:w-2/5 w-full " >
+                  <img src="./Images/Rectangle 14.png" alt="" class="w-full lg:hidden">
+                  <img src="./Images/11.png" alt="" class="w-full lg:block hidden">
+               </div>
+               <div class="box-2  lg:w-3/5 w-full flex flex-col gap-1">
+                  <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-[#1313181A]">
+                     <input type="radio" name="my-accordion-3" checked="checked" /> 
+                     <div class="collapse-title   h-[70px] text-5 font-extrabold">
+                        Our Equipment
+                     </div>
+                     <div class="collapse-content">
+                        <p>Helmet , Skates, Jersey, Shoulder Pads, Elbow Pads etc.</p>
+                     </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-[#1313181A]">
+                     <input type="radio" name="my-accordion-3"  /> 
+                     <div class="collapse-title text-5 font-extrabold h-[70px]">
+                        Hockey Training Time
+                     </div>
+                     <div class="collapse-content">
+                        <p>Hockey training sessions typically range from 1 to 5 hours a day.</p>
+                     </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-[#1313181A]">
+                     <input type="radio" name="my-accordion-3"  /> 
+                     <div class="collapse-title text-5 font-extrabold h-[70px]">
+                        a private hockey lesson?"
+                     </div>
+                     <div class="collapse-content">
+                        <p>login here section to book your private lesson</p>
+                     </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-[#1313181A]">
+                     <input type="radio" name="my-accordion-3"  /> 
+                     <div class="collapse-title text-5 font-extrabold h-[70px] ">
+                        Ski Touring
+                     </div>
+                     <div class="collapse-content">
+                        <p> "Yes, we offer guided tours for all skill levels. Join us!"</p>
+                     </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-[#1313181A]">
+                     <input type="radio" name="my-accordion-3"  /> 
+                     <div class="collapse-title text-5 font-extrabold h-[70px] ">
+                        Booking
+                     </div>
+                     <div class="collapse-content">
+                        <p>Visit 'booking' on our site. Simple steps for easy booking."</p>
+                     </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-200 rounded-none border-b-2 border-[#1313181A]">
+                     <input type="radio" name="my-accordion-3"  /> 
+                     <div class="collapse-title text-5 font-extrabold h-[70px] ">
+                        Pricings
+                     </div>
+                     <div class="collapse-content">
+                        <p> Siri level: 1. Junior 2. Intermediate 3.Professional</p>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <div class="pro max m-auto mt-5 lg:mt-24 py-5  text-center border-b-2 border-t-2 border-stone-400 border-dashed  lg:py-8 mb-10">
+               <h1 class=" lg:text-4xl   text-2xl  font-bold lg:leading-9 "> 
+                  Get In Touch
+               </h1>
+               <p class=" lg:text-base text-sm font-normal opacity-70 max-w-[620px] m-auto  px-3 p-2 leading-6 lg:leading-7 lg:mt-6">
+                  Connect with us! Login to access exclusive content, updates, and personalized services. Your engagement is essential to our community 
+               </p>
+            </div>
+            <article class="max m-auto flex flex-col lg:flex-row  lg:min-h-[760px] gap-4  ">
+               <div class="box-1 flex flex-col justify-between border-[1px] rounded-2xl border-[#1313181A] lg:min-h-96 gap-3 w-full  lg:w-2/5 p-5 lg:p-12 ">
+                  <div class="w-full bg-[#BCED6D1A] rounded-2xl p-8 items-shadow">
+                     <img src="./Images/Group 1171275317.png" alt="">
+                     <p class="leading-8 text-base text-[#13131866] pt-6 pb-1 ">
+                        Phone Number :
+                     </p>
+                     <h2 class="lg:text-xl text-[18px] font-extrabold leading-8">
+                        (+62) 123-321-543
+                     </h2>
+                  </div>
+                  <div class="w-full bg-[#FDDD5F1A] rounded-2xl p-8 items-shadow">
+                     <img src="./Images/Group 1171275317.png" alt="">
+                     <p class="leading-8 text-base text-[#13131866] pt-6 pb-1 ">
+                        Email :
+                     </p>
+                     <h2 class="lg:text-xl text-[18px] font-extrabold leading-8">
+                        hockeys@support.com
+                     </h2>
+                  </div>
+                  <div class="w-full bg-[#629CF31A] rounded-2xl lg:p-8 p-6 items-shadow">
+                     <img src="./Images/Group 1171275317.png" alt="">
+                     <p class="leading-8 text-base text-[#13131866] pt-6 pb-1 ">
+                        Location : 
+                     </p>
+                     <h2 class="lg:text-xl text-[18px] font-extrabold leading-8">
+                        152/1 Mohakhali Wireless Gate
+                     </h2>
+                  </div>
+               </div>
+               <div class="box-2  min-h-96 w-full lg:w-3/5 ">
+                  <form action="get" class=" w-full rounded-xl gap-6 lg:gap-[2%] min-h-[762px] grid-rows-4 flex flex-wrap">
+                     <article class=" lg:w-[49%] w-full">
+                        <label for="name">
+                           <h3 class="font-xl font-bold text-[#131318] mb-2">Your Name </h3>
+                        </label>
+                        <input type="text" id="name" class="p-5 w-full min-h-16  bg-[#f8f8f8] rounded-xl focus:outline-2 focus:outline-black" placeholder="Enter your full name " required>
+                     </article>
+                     <article class="lg:w-[49%] w-full">
+                        <label for="email">
+                           <h3 class="font-xl font-bold text-[#131318] mb-2">Your Email </h3>
+                        </label>
+                        <input type="email" id="email" class="p-5 w-full min-h-16 rounded-xl bg-[#f8f8f8] focus:outline-2 focus:outline-black" placeholder="Enter your email" required>
+                     </article >
+                     <article class=" lg:w-[49%] w-full">
+                        <label for="Subject">
+                           <h3 class="font-xl font-bold text-[#131318] mb-2">Subject</h3>
+                        </label>
+                        <input type="text" id="Subject" class="p-5 w-full min-h-16 bg-[#f8f8f8] rounded-xl focus:outline-2 focus:outline-black" placeholder="Enter your subject" required>
+                     </article>
+                     <article class=" lg:w-[49%] w-full">
+                        <label for="PhoneNumber">
+                           <h3 class="font-xl  font-bold text-[#131318] mb-2">Phone Number </h3>
+                        </label>
+                        <input type="text" id="PhoneNumber" class="p-5 w-full min-h-16 bg-[#f8f8f8] rounded-xl focus:outline-2 focus:outline-black" placeholder="Enter your full name" required>
+                     </article>
+                     <article class=" w-full">
+                        <label for="Message">
+                           <h3 class="font-xl font-bold text-[#131318] mb-2">Message </h3>
+                        </label>
+                        <textarea name="Message" id="Message" cols="30" rows="10" class=" h-52 lg:h-[370px] w-full  p-5  min-h-16 bg-[#f8f8f8] rounded-xl focus:outline-2 focus:outline-black" placeholder="Write your message" required>Message</textarea>
+                     </article >
+                     <button  class=" bg-[#FF4240]  hover:text-black text-white w-full h-14 rounded-xl font-bold">
+                     Send Message
+                     </button>
+                  </form>
+               </div>
+            </article>
+            <article class="max m-auto lg:min-h-40 min-h-40  mt-10 rounded-xl bg-[#13131808] p-8 flex flex-col items-center justify-center gap-5 mb-10 ">
+               <h2 class="text-2xl font-extrabold text-[#131318]">Social Media</h2>
+               <div class="icon-div text-2xl font-extrabold flex gap-7" >
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-github"></i>
+               </div>
+            </article>
+         </div>
+         <footer class="   p-2 lg:p-10 bg-neutral bg-[#131318] min-h-[450px]">
+            <div class=" mt-10 lg:mt-12  flex flex-row lg:flex-row max m-auto    min-h-[300px] flex-wrap gap-y-10 lg:pb-0 pb-14">
+               <div class="box1  text-white text-center w-full lg:w-2/5">
+                  <header class="text-2xl lg:text-3xl lg:mb-6 font-extrabold text-center lg:text-left">Hockey & Blade</header>
+                  <p class="p-3 mt-3 lg:mb-8 lg:p-0 lg:mt-0 m-auto lg:m-0 max-w-96 lg:max-w-[330px] text-base font-normal opacity-60 lg:text-left">Dive into the thrill of hockey with us. Join our
+                     passionate community, celebrate victories, and embrace the spirit of teamwork together.
+                  </p>
+                  <div class="icons flex justify-center lg:justify-start items-center gap-3 my-4">
+                     <i class="fa-regular fa-envelope text-red-500 text-2xl"></i>
+                     <h3 class="text-base opacity-80">hockeys@support.com</h3>
+                  </div>
+                  <div class="icons flex justify-center lg:justify-start items-center gap-3">
+                     <i class="fa-solid fa-phone text-red-500 text-2xl"></i>
+                     <h3 class="text-base opacity-80">(+62) 123-321-543</h3>
+                  </div>
+               </div>
+               <div class="box2  text-white text-center w-[49%] lg:w-1/5 flex flex-col justify-start lg:items-start gap-4">
+                  <header class="text-xl  lg:mb-5 font-bold text-center lg:text-left">Company</header>
+                  <a class=" text-base font-normal opacity-60 lg:text-left">About us
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left"> Leadership
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left">Careers
+                  </a>
+                  <a class=" text-base font-normal opacity-60 lg:text-left">
+                  News & Article
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left">
+                  Legal Notice</a>
+               </div>
+               <div class="box3  text-white text-center w-[49%] lg:w-1/5 flex flex-col lg:justify-start items-center lg:items-start gap-4">
+                  <header class="text-xl  lg:mb-5 font-bold text-center lg:text-left">Support</header>
+                  <a class=" text-base font-normal opacity-60 lg:text-left">Help Center
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left"> FAQ
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left">Ticket 
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left">
+                  Contact Us</a>
+               </div>
+               <div class="box4 text-white text-center w-full lg:w-1/5 flex flex-col justify-start lg:items-start gap-4">
+                  <header class="text-xl  lg:mb-5 font-bold text-center lg:text-left">Services</header>
+                  <a class=" text-base font-normal opacity-60 lg:text-left">Academy
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left"> Group Lesson
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left">Private Lesson
+                  </a>
+                  <a class=" text-base font-normal opacity-60 lg:text-left">
+                  Hockeys for kids
+                  </a>
+                  <a class="text-base font-normal opacity-60 lg:text-left">
+                  Hockeys for Adult</a>
+               </div>
+            </div>
+            </div>
+         </footer>
+   </body>
+</html>
